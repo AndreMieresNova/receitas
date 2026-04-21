@@ -1,5 +1,6 @@
 import { Recipe } from '../types/recipe';
 import paoImg from '../images/pao.png';
+import strogonoffImg from '../images/strog_beringela.png';
 
 export const recipes: Recipe[] = [
   {
@@ -61,4 +62,60 @@ export const recipes: Recipe[] = [
       }
     ]
   },
+  {
+    id: 'strogonoff-de-berinjela',
+    title: 'Strogonoff de Berinjela',
+    description: 'Uma versão vegetariana deliciosa e cremosa do clássico strogonoff.',
+    prepTime: 15,
+    cookTime: 15,
+    servings: 1,
+    difficulty: 'fácil',
+    image: strogonoffImg, // Placeholder image
+    ingredients: [
+      { name: 'Berinjela', amount: 120, unit: 'g' },
+      { name: 'Cebola', amount: 40, unit: 'g' },
+      { name: 'Alho', amount: 4, unit: 'g' },
+      { name: 'Champignon', amount: 50, unit: 'g' },
+      { name: 'Creme de leite', amount: 70, unit: 'g' },
+      { name: 'Molho de tomate', amount: 50, unit: 'ml' },
+      { name: 'Mostarda', amount: 5, unit: 'g' },
+      { name: 'Ketchup', amount: 5, unit: 'ml' },
+      { name: 'Shoyu', amount: 10, unit: 'ml' },
+      { name: 'Azeite', amount: 10, unit: 'ml' },
+      { name: 'Sal', amount: 2, unit: 'g' },
+      { name: 'Pimenta a gosto', amount: 1, unit: 'g' },
+      { name: 'Páprica (opcional)', amount: 1, unit: 'g' }
+    ],
+    steps: [
+      {
+        id: 1,
+        description: 'Corte a berinjela em cubos, adicione sal e deixe descansar por 10-15 minutos. Em seguida, enxágue e seque bem.',
+        time: 15
+      },
+      {
+        id: 2,
+        description: 'Em uma panela em fogo médio-alto, aqueça metade do azeite e doure a berinjela por 6-8 minutos.',
+        time: 8
+      },
+      {
+        id: 3,
+        description: 'Adicione o restante do azeite e refogue a cebola por 2-3 minutos. Adicione o alho e o champignon e cozinhe por mais 2 minutos.',
+        time: 5
+      },
+      {
+        id: 4,
+        description: 'Volte a berinjela para a panela, adicione todos os molhos (tomate, mostarda, ketchup, shoyu) e cozinhe por 4-5 minutos.',
+        time: 5
+      },
+      {
+        id: 5,
+        description: 'Baixe o fogo, adicione o creme de leite e cozinhe por mais 2 minutos, sem deixar ferver.',
+        time: 2
+      }
+    ],
+    tips: [
+      'Sirva com arroz branco e batata palha.',
+      'Se não tiver champignon fresco, pode usar em conserva.'
+    ]
+  }
 ];
