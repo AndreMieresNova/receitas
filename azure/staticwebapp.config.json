@@ -2,6 +2,14 @@
   "routes": [
     {
       "route": "/*",
+      "condition": {
+        "host": ["receitasdoandre.com.br"]
+      },
+      "redirect": "https://www.receitasdoandre.com.br/:splat",
+      "statusCode": 301
+    },
+    {
+      "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
     }
