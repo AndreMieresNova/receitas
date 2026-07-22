@@ -3,6 +3,7 @@ import paoImg from '../images/pao.png';
 import strogonoffImg from '../images/strog_beringela.png';
 import almondegasImg from '../images/almondegas.png';
 import nhoqueImg from '../images/nhoque.png';
+import brocolisImg from '../images/brocolis.png';
 
 export const recipes: Recipe[] = [
   {
@@ -234,5 +235,66 @@ export const recipes: Recipe[] = [
       'Batata tipo russet (mais seca) é a ideal para nhoque.'
     ],
     referenceLinks: []
+  },
+  {
+    id: 'gratinado-de-brocolis',
+    title: 'Gratinado de Brócolis',
+    description: 'Um gratinado cremoso e saboroso de brócolis com molho béchamel e queijo derretido, perfeito como acompanhamento ou prato principal.',
+    prepTime: 15,
+    cookTime: 20,
+    servings: 2,
+    difficulty: 'fácil',
+    image: brocolisImg,
+    ingredients: [
+      { name: 'Brócolis', amount: 250, unit: 'g' },
+      { name: 'Manteiga', amount: 20, unit: 'g' },
+      { name: 'Farinha de trigo', amount: 20, unit: 'g' },
+      { name: 'Leite', amount: 250, unit: 'ml' },
+      { name: 'Muçarela ralada', amount: 70, unit: 'g' },
+      { name: 'Queijo parmesão ralado', amount: 30, unit: 'g' },
+      { name: 'Sal', amount: 3, unit: 'g' },
+      { name: 'Pimenta-do-reino', amount: 1, unit: 'g' },
+      { name: 'Noz-moscada (opcional)', amount: 0.5, unit: 'g' }
+    ],
+    steps: [
+      {
+        id: 1,
+        description: 'Cozinhe o brócolis em água fervente com sal por 3 a 4 minutos. Para aproveitar os cabos, descasque a camada externa grossa, corte em cubinhos e cozinhe junto com os floretes. Escorra bem.',
+        time: 5
+      },
+      {
+        id: 2,
+        description: 'Em uma panela, derreta a manteiga em fogo médio. Junte a farinha e cozinhe por 1 minuto, mexendo continuamente.',
+        time: 1
+      },
+      {
+        id: 3,
+        description: 'Acrescente o leite aos poucos, sempre mexendo para evitar grumos. Continue cozinhando até o molho engrossar, aproximadamente 5 a 7 minutos.',
+        time: 7
+      },
+      {
+        id: 4,
+        description: 'Tempere com sal, pimenta e noz-moscada a gosto. Misture 35g de muçarela ao molho béchamel.',
+        time: 2
+      },
+      {
+        id: 5,
+        description: 'Coloque o brócolis em um refratário e cubra com o molho béchamel. Finalize com os 35 g restantes de muçarela e os 30 g de parmesão espalhados por cima.',
+        time: 2
+      },
+      {
+        id: 6,
+        description: 'Asse em forno preaquecido a 220°C por 15 a 20 minutos, até o queijo dourar e ficar crocante por cima.',
+        time: 18,
+        temperature: 220
+      }
+    ],
+    tips: [
+      'O gratinado fica bem cremoso e com bastante queijo, sem esconder o sabor do brócolis.',
+      'Não jogue fora os cabos do brócolis! Após remover 1 a 2 cm da base (que é fibrosa), descasque e corte em cubinhos — ficam macios e levemente adocicados.',
+      'O molho deve estar de uma consistência que cubra bem o brócolis, não muito fino nem muito espesso.',
+      'Você pode preparar tudo com antecedência (até o molho béchamel pronto) e só assar no momento de servir.',
+      'Para um topo mais crocante, use um pouco menos de leite no molho béchamel.'
+    ]
   }
 ];
