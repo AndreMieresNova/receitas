@@ -4,6 +4,8 @@ import strogonoffImg from '../images/strog_beringela.png';
 import almondegasImg from '../images/almondegas.png';
 import nhoqueImg from '../images/nhoque.png';
 import brocolisImg from '../images/brocolis.png';
+import hamburguerImg from '../images/hamburguer.jpg';
+import hamburgaoImg from '../images/hamburgao.png';
 
 export const recipes: Recipe[] = [
   {
@@ -295,6 +297,158 @@ export const recipes: Recipe[] = [
       'O molho deve estar de uma consistência que cubra bem o brócolis, não muito fino nem muito espesso.',
       'Você pode preparar tudo com antecedência (até o molho béchamel pronto) e só assar no momento de servir.',
       'Para um topo mais crocante, use um pouco menos de leite no molho béchamel.'
+    ]
+  },
+  {
+    id: 'hamburguer',
+    title: 'Hambúrguer',
+    description: 'Hambúrguer suculento de carne moída com temperos naturais, assado no forno. Rende 2 unidades.',
+    prepTime: 10,
+    cookTime: 12,
+    servings: 2,
+    difficulty: 'fácil',
+    image: hamburguerImg,
+    ingredients: [
+      { name: 'Carne moída (lean ground beef)', amount: 180, unit: 'g' },
+      { name: 'Cebola bem picadinha', amount: 15, unit: 'g' },
+      { name: 'Salsinha picada', amount: 3, unit: 'g' },
+      { name: 'Alho bem picadinho/amassado', amount: 2, unit: 'g' },
+      { name: 'Páprica', amount: 1, unit: 'g' },
+      { name: 'Pimenta-do-reino', amount: 0.5, unit: 'g' },
+      { name: 'Sal', amount: 2, unit: 'g' }
+    ],
+    steps: [
+      {
+        id: 1,
+        description: 'Pique a cebola bem pequenininha. Se estiver muito molhada, aperte levemente com papel-toalha.',
+        time: 3
+      },
+      {
+        id: 2,
+        description: 'Em uma tigela, coloque 180 g de carne, 15 g de cebola, 3 g de salsinha, 2 g de alho, 1 g de páprica, 0,5 g de pimenta e 2 g de sal.',
+        time: 2
+      },
+      {
+        id: 3,
+        description: 'Misture delicadamente, apenas até os ingredientes ficarem distribuídos. Não fique amassando a carne.',
+        time: 2
+      },
+      {
+        id: 4,
+        description: 'Divida em 2 porções iguais, de aproximadamente 101–102 g cada. Faça cada porção em formato de disco, com aproximadamente 1–1,5 cm de espessura. Com o polegar, faça uma pequena depressão no centro.',
+        time: 3
+      },
+      {
+        id: 5,
+        description: 'Coloque os dois em uma assadeira com papel manteiga ou levemente untada. Leve ao forno pré-aquecido a 180°C por aproximadamente 12 minutos.',
+        time: 12,
+        temperature: 180
+      },
+      {
+        id: 6,
+        description: 'Retire e deixe descansar 2–3 minutos. Depois coloque cada hambúrguer na massa com presunto + muçarela + tomate e feche o hamburgão.',
+        time: 3
+      }
+    ],
+    tips: [
+      'Como é carne moída, depois que os hamburgões terminarem de assar, o centro da carne deve chegar a 71°C. Use um termômetro para confirmar.',
+      'A depressão no centro ajuda a evitar que o hambúrguer inche durante o assamento.',
+      'Não amasse demais a carne ao misturar os ingredientes, pois isso deixa o hambúrguer mais duro.',
+      'Seque bem a cebola antes de usar para manter a textura ideal da carne.',
+      'Deixe descansar após sair do forno antes de montar o hamburgão.'
+    ],
+    referenceLinks: [
+      {
+        url: '#hamburgao-de-forno',
+        label: 'Próximo passo: Hamburgão de Forno'
+      }
+    ]
+  },
+  {
+    id: 'hamburgao-de-forno',
+    title: 'Hamburgão de Forno',
+    description: 'Pão caseiro assado no forno recheado com hambúrguer pré-assado, presunto, muçarela e tomate. Rende 4 unidades.',
+    prepTime: 70,
+    cookTime: 30,
+    servings: 4,
+    difficulty: 'médio',
+    image: hamburgaoImg,
+    ingredients: [
+      { name: 'Fermento biológico seco', amount: 2.5, unit: 'g' },
+      { name: 'Açúcar', amount: 10, unit: 'g' },
+      { name: 'Água morna', amount: 50, unit: 'ml' },
+      { name: 'Leite morno', amount: 50, unit: 'ml' },
+      { name: 'Óleo', amount: 25, unit: 'ml' },
+      { name: 'Sal', amount: 3, unit: 'g' },
+      { name: 'Farinha de trigo', amount: 175, unit: 'g' },
+      { name: 'Presunto fatiado', amount: 100, unit: 'g' },
+      { name: 'Muçarela fatiada', amount: 100, unit: 'g' },
+      { name: 'Tomate em rodelas', amount: 200, unit: 'g' },
+      { name: 'Hambúrgueres pré-assados', amount: 4, unit: 'unidades' },
+      { name: 'Gema para pincelar', amount: 20, unit: 'g' },
+      { name: 'Gergelim', amount: 10, unit: 'g' }
+    ],
+    steps: [
+      {
+        id: 1,
+        description: 'Misture o fermento, açúcar, água morna e leite morno. Deixe descansar por 2-3 minutos.',
+        time: 3
+      },
+      {
+        id: 2,
+        description: 'Acrescente o óleo e o sal à mistura anterior.',
+        time: 1
+      },
+      {
+        id: 3,
+        description: 'Vá adicionando a farinha aos poucos até formar uma massa macia que não grude muito nas mãos. Comece com ~175 g e ajuste conforme necessário.',
+        time: 5
+      },
+      {
+        id: 4,
+        description: 'Sove por uns 5–8 minutos até a massa ficar lisa e elástica.',
+        time: 8
+      },
+      {
+        id: 5,
+        description: 'Cubra a massa e deixe descansar até crescer bem — aproximadamente 1 hora.',
+        time: 60
+      },
+      {
+        id: 6,
+        description: 'Divida a massa em 4 partes iguais. Abra cada pedaço em um disco achatado.',
+        time: 5
+      },
+      {
+        id: 7,
+        description: 'Em cada disco, coloque presunto + muçarela + tomate em rodelas + 1 hambúrguer pré-assado. Feche bem a massa envolvendo o recheio.',
+        time: 5
+      },
+      {
+        id: 8,
+        description: 'Coloque cada hamburgão com a emenda para baixo em uma assadeira com papel manteiga. Pincele o topo com gema e polvilhe gergelim.',
+        time: 3
+      },
+      {
+        id: 9,
+        description: 'Asse em forno pré-aquecido a 180°C por ~30 minutos, até a massa dourar.',
+        time: 30,
+        temperature: 180
+      }
+    ],
+    tips: [
+      'Os hambúrgueres devem estar pré-assados por ~12 minutos (veja receita de Hambúrguer) antes de serem colocados no pão.',
+      'A gema pincelada dá um brilho bonito e ajuda o gergelim a aderir melhor.',
+      'Certifique-se de fechar bem a massa para o recheio não vazar durante o assamento.',
+      'Se a massa ficar muito pegajosa, polvilhe um pouco de farinha, mas não exagere.',
+      'Deixe esfriar um pouco antes de servir para evitar que o recheio escorra.',
+      'Você pode preparar os discos recheados e congelar antes de assar; nesse caso, aumente o tempo de assamento em ~10 minutos.'
+    ],
+    referenceLinks: [
+      {
+        url: '#hamburguer',
+        label: 'Receita: Hambúrguer (pré-assado)'
+      }
     ]
   }
 ];
