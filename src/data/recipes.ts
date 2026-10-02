@@ -1,5 +1,6 @@
 import { Recipe } from '../types/recipe';
-import paoImg from '../images/paodeleite.png';
+import paoImg from '../images/pao.png';
+import paodeleiteImg from '../images/paodeleite.png';
 import strogonoffImg from '../images/strog_beringela.png';
 import almondegasImg from '../images/almondegas.png';
 import nhoqueImg from '../images/nhoque.png';
@@ -459,7 +460,7 @@ export const recipes: Recipe[] = [
     cookTime: 30,
     servings: 8,
     difficulty: 'médio',
-    image: paoImg,
+    image: paodeleiteImg,
     ingredients: [
       { name: 'Farinha de trigo', amount: 320, unit: 'g' },
       { name: 'Leite 0%', amount: 140, unit: 'g' },
