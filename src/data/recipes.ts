@@ -1,5 +1,5 @@
 import { Recipe } from '../types/recipe';
-import paoImg from '../images/pao.png';
+import paoImg from '../images/paodeleite.png';
 import strogonoffImg from '../images/strog_beringela.png';
 import almondegasImg from '../images/almondegas.png';
 import nhoqueImg from '../images/nhoque.png';
@@ -449,6 +449,91 @@ export const recipes: Recipe[] = [
         url: '#hamburguer',
         label: 'Receita: Hambúrguer (pré-assado)'
       }
+    ]
+  },
+  {
+    id: 'pao-de-leite',
+    title: 'Pão de Leite',
+    description: 'Pão macio e levemente adocicado, modelado em três partes e assado em forma de pão.',
+    prepTime: 170,
+    cookTime: 30,
+    servings: 8,
+    difficulty: 'médio',
+    image: paoImg,
+    ingredients: [
+      { name: 'Farinha de trigo', amount: 320, unit: 'g' },
+      { name: 'Leite 0%', amount: 140, unit: 'g' },
+      { name: 'Ovo', amount: 1, unit: 'unidade' },
+      { name: 'Leite condensado', amount: 20, unit: 'g' },
+      { name: 'Açúcar', amount: 35, unit: 'g' },
+      { name: 'Leite em pó', amount: 20, unit: 'g' },
+      { name: 'Fermento biológico seco', amount: 5, unit: 'g' },
+      { name: 'Manteiga', amount: 40, unit: 'g' },
+      { name: 'Sal (5 g com manteiga sem sal ou 3 g com manteiga com sal)', amount: 5, unit: 'g' },
+      { name: 'Gema para pincelar', amount: 1, unit: 'unidade' },
+      { name: 'Leite para pincelar', amount: 1, unit: 'colher' }
+    ],
+    steps: [
+      {
+        id: 1,
+        description: 'Aqueça os 140 g de leite 0% até ficar morno, idealmente entre 35 e 40°C. Misture o fermento, o açúcar e o leite condensado. Deixe descansar por 5 a 10 minutos.',
+        time: 10,
+        temperature: 40
+      },
+      {
+        id: 2,
+        description: 'Junte o ovo e o leite em pó e misture bem.',
+        time: 3
+      },
+      {
+        id: 3,
+        description: 'Coloque a farinha e misture até não sobrar farinha seca. Deixe a massa descansar por 10 minutos.',
+        time: 10
+      },
+      {
+        id: 4,
+        description: 'Adicione o sal — 5 g se a manteiga for sem sal ou 3 g se for com sal — e sove por aproximadamente 4 a 5 minutos.',
+        time: 5
+      },
+      {
+        id: 5,
+        description: 'Adicione os 40 g de manteiga aos poucos, em 3 ou 4 partes. Só coloque a próxima parte quando a anterior estiver praticamente incorporada.',
+        time: 8
+      },
+      {
+        id: 6,
+        description: 'Depois que toda a manteiga entrar, sove por mais 8 a 12 minutos, até a massa ficar lisa, macia e elástica. Ela pode continuar levemente pegajosa.',
+        time: 12
+      },
+      {
+        id: 7,
+        description: 'Faça uma bola, cubra e deixe fermentar por cerca de 1 a 1 hora e 30 minutos, ou até quase dobrar de volume. Pode deixar no forno desligado.',
+        time: 90
+      },
+      {
+        id: 8,
+        description: 'Retire delicadamente o excesso de gás, divida a massa em 3 partes iguais, boleie e coloque as três lado a lado em uma forma untada com uma camada fina de manteiga.',
+        time: 10
+      },
+      {
+        id: 9,
+        description: 'Cubra e deixe fermentar novamente por aproximadamente 50 a 90 minutos, até crescer bastante e chegar a 1 ou 2 cm abaixo da borda da forma.',
+        time: 90
+      },
+      {
+        id: 10,
+        description: 'Pincele com a gema misturada com um pouco de leite. Asse em forno preaquecido a 350°F (175°C) por cerca de 25 a 30 minutos, até dourar.',
+        time: 30,
+        temperature: 175
+      }
+    ],
+    tips: [
+      'Use um termômetro para garantir que o leite esteja entre 35 e 40°C; leite quente demais pode prejudicar o fermento.',
+      'A massa fica melequenta no começo, mas não coloque farinha extra. A manteiga e a sova deixam a massa lisa e elástica.',
+      'Respeite as duas fermentações: o ponto é mais importante que o relógio, pois o tempo varia conforme a temperatura do ambiente.',
+      'Unte a forma com uma camada fina de manteiga e deixe espaço para a massa crescer.',
+      'Na segunda fermentação, o pão deve ficar a 1 ou 2 cm abaixo da borda antes de ir ao forno.',
+      'A quantidade de sal depende da manteiga: use 5 g com manteiga sem sal e 3 g com manteiga com sal.'
     ]
   }
 ];
